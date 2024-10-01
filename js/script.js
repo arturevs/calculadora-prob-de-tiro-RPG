@@ -13,3 +13,4 @@ function calculateChance() {
 
     document.getElementById("result").innerText = `Chance de Acerto: ${chance}%`;
 }
+//just a test
