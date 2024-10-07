@@ -32,18 +32,19 @@ body {
     color: #f0d130;
 }
 
+
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-label {
+.input_group label {
     text-align: left;
     margin: 15px 0 5px;
 }
 
-input {
+.input_group input {
     padding: 10px;
     width: calc(100% - 24px);
     margin-bottom: 10px;
@@ -85,3 +86,29 @@ button:hover {
         padding-left: 0; 
     }
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 46, 99, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .dropdown-content label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
