@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Oswald:wght@200..700&display=swap');
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Oswald, regular;
     background: url('../assets/vault_tec_background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #E3E3C3;
+    color: #e0c06c;
     text-align: center;
     margin: 0;
     padding: 0;
 }
+img{
+    position: relative;
+    top: -20    px;
+    }
 
 .container {
     display: flex;
@@ -20,20 +26,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 46, 99, 0.9);
+    background: #0167ad;
     padding: 20px;
     border-radius: 12px;
-    border: 5px solid #f0d130;
+    border: 5px solid #af934c;
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
     width: 400px;
 }
 
 .calculator h2 {
-    color: #f0d130;
+    font-family: Oswald, bold;
+    color: #e0c06c;
+    border: #b58043;
+    -webkit-text-stroke: 1px #b58043;
 }
 
 
 form {
+    font-family: Oswald, regular;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -48,15 +58,16 @@ form {
     padding: 10px;
     width: calc(100% - 24px);
     margin-bottom: 10px;
-    border: 2px solid #f0d130;
-    background: #001f3f;
+    border: 2px solid #e0c06c;
+    background: #064875;
     color: #f0d130;
     border-radius: 6px;
 }
 
 button {
+    font-family: Oswald, regular;
     padding: 10px 20px;
-    background: #f0d130;
+    background: #e0c06c;
     color: #002e63;
     border: none;
     cursor: pointer;
@@ -69,6 +80,7 @@ button:hover {
 }
 
 .result {
+    font-family: Oswald, Bold;
     margin-top: 20px;
     font-size: 1.5em;
     color: #f0d130;
@@ -96,7 +108,7 @@ button:hover {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(0, 46, 99, 0.9);
+    background-color: #064975e1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
