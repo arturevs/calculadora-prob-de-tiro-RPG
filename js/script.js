@@ -14,7 +14,7 @@ function calculateChance() {
     }
     else
     {
-        document.getElementById("result").innerText = `Chance de Acerto: ${chance ?? 0}%`;
+        document.getElementById("result").innerText = `Valor necessário no D100 ${100-int(chance) ?? 0}%`;
     }
 }   
   
